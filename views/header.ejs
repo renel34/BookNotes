@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Reading Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body class="bg-image">
+    <div class="container">
+      <header>
+        <h1>My Reading Journal</h1>
+        <p>A collection of books that have shaped my journey</p>
+        <div class="sort-buttons">
+          <button id="sortByRating">Sort by Rating</button>
+          <button id="sortByRecency">Sort by Recency</button>
+          <button id="addABook">Add a Book</button>
+        </div>
+        <div class="header-line"></div>
+      </header>
+
+    <script>
+      document.getElementById('sortByRating').addEventListener('click', function() {
+        window.location.href = '/rating';
+      });
+
+      document.getElementById('sortByRecency').addEventListener('click', function() {
+        window.location.href = '/recency';
+      });
+
+      document.getElementById('addABook').addEventListener('click', function() {
+        window.location.href = '/add';
+      });
+    </script>

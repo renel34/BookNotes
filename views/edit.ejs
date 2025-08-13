@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= action === 'add' ? 'Add a Book' : 'Edit a Book' %></title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body class="bg-image">
+    <div class="container">
+        <header>
+            <h1><%= action === 'add' ? 'Adding to the Collection' : 'Record Editing' %></h1>
+        </header>
+        <main>
+            <form action="/<%= action %>" method="POST" class="edit-form">
+                        <!-- Add the error message display here -->
+                <% if (locals.error) { %>
+                    <div class="error-message">
+                        <%= error %>
+                    </div>
+                <% } %>
+                
+                <% if (action === 'edit') { %>
+                    <input type="hidden" name="bookId" value="<%= book.id %>">
+                <% } %>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" value="<%= book.title || '' %>" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" name="author" value="<%= book.author || '' %>" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date_read">Date Read:</label>
+                        <input type="date" id="date_read" name="date_read" value="<%= book.date_read || '' %>" class="form-control">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rating">Rating:</label>
+                        <select id="rating" name="rating" class="form-control">
+                            <option value="" disabled <%= !book.rating ? 'selected' : '' %>>Select a rating</option>
+                            <% for(let i = 1; i <= 5; i++) { %>
+                                <option value="<%= i %>" <%= book.rating == i ? 'selected' : '' %>><%= i %> Star<%= i !== 1 ? 's' : '' %></option>
+                            <% } %>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="isbn">Cover ID:</label>
+                        <input type="text" id="cover_i" name="cover_i" value="<%= book.cover_i || '' %>" class="form-control isbn-input">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="summary">Summary:</label>
+                    <textarea id="summary" name="summary" class="form-control summary-textarea"><%= book.summary ? book.summary.replace(/\s+/g, ' ').trim() : '' %></textarea>
+                </div>
+                
+                <div class="sort-buttons">
+                    <button type="submit"><%= action === 'add' ? 'Add Book' : 'Update Book' %></button>
+                    <% if (action === 'add') { %>
+                        <button type="submit" formaction="/fetch-book">Fetch Book Info</button>
+                    <% } %>
+                    <button type="button" onclick="window.location.href='/'">Cancel</button>
+                </div>
+            </form>
+
+            <% if (books && books.length > 0) { %>
+            <h2>Select a Book</h2>
+            <div class="book-list">
+                <% books.forEach((b, i) => { %>
+                <div class="book-card">
+                    <div class="book-card-content">
+                        <!-- Book cover on the left -->
+                        <% if (b.cover_i) { %>
+                            <div class="book-cover">
+                            <img src="https://covers.openlibrary.org/b/id/<%= b.cover_i %>-M.jpg" alt="Cover">
+                            </div>
+                        <% } %>
+
+                        <!-- Title, author, and button on the right -->
+                        <div class="book-details">
+                            <h2><%= b.title %></h2>
+                            <p><strong>Author:</strong> <%= b.author %></p>
+                            <p><strong>Year published:</strong> <%= b.first_publish_year %></p>
+
+                            <form action="/select-book" method="POST" class="select-button">
+                            <input type="hidden" name="title" value="<%= b.title %>">
+                            <input type="hidden" name="author" value="<%= b.author %>">
+                            <input type="hidden" name="cover_i" value="<%= b.cover_i %>">
+                            <button type="submit">Select</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <% }); %>
+            </div>
+            <% } %>
+
+
+        </main>
+<%- include ('footer.ejs') %>
