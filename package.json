@@ -1,0 +1,19 @@
+{
+  "name": "34-capstone-project---book-notes",
+  "version": "1.0.0",
+  "description": "This a project to revise how to integrate public APIs into web projects. Gain more experience using Express/Node.js for server-side programming. Demonstrate ability to Create Read Update and Delete data in a PostgreSQL Database to persist data.",
+  "license": "ISC",
+  "author": "René Laplante",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}
