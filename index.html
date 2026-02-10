@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Reading Journal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/main.css" />
+  </head>
+  <body class="bg-image">
+    <div class="container">
+      <header>
+        <h1>My Reading Journal</h1>
+        <p>A collection of books that have shaped my journey</p>
+        <div class="sort-buttons">
+          <button id="sortByRating">Sort by Rating</button>
+          <button id="sortByRecency">Sort by Recency</button>
+          <button id="addABook">Add a Book</button>
+        </div>
+        <div class="header-line"></div>
+      </header>
+
+      <!-- Books Collection -->
+      <div class="books-collection">
+        <!-- Book 1 -->
+        <div class="book-card">
+          <div class="book-card-content">
+            <!-- Book Cover -->
+            <div
+              class="book-cover"
+              style="background: linear-gradient(to bottom, #2563eb, #1e40af)"
+            >
+              <div class="text-white text-center p-4">
+                <div class="text-lg font-bold mb-2">ATOMIC</div>
+                <div class="text-sm">HABITS</div>
+                <div class="text-xs mt-2 opacity-80">James Clear</div>
+              </div>
+            </div>
+
+            <!-- Book Details -->
+            <div class="book-details">
+              <h2>Atomic Habits</h2>
+              <p>
+                A practical guide to building good habits and breaking bad ones. Clear explains how tiny changes can lead to remarkable results through the compound effect of small improvements made consistently over time. </p>
+              <div class="book-meta">
+                <div class="book-date">
+                  <span class="font-medium">Read:</span> March 2024
+                </div>
+                <div>
+                  <span class="font-medium">My Rating:</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-card">
+          <div class="book-card-content">
+            <!-- Book Cover -->
+            <div
+              class="book-cover"
+              style="background: linear-gradient(to bottom, #15803d, #14532d)"
+            >
+              <div class="text-white text-center p-4">
+                <div class="text-lg font-bold mb-2">THE</div>
+                <div class="text-lg font-bold mb-2">ALCHEMIST</div>
+                <div class="text-xs mt-2 opacity-80">Paulo Coelho</div>
+              </div>
+            </div>
+
+            <!-- Book Details -->
+            <div class="book-details">
+              <h2>The Alchemist</h2>
+              <p>
+                A philosophical novel about Santiago, a young shepherd who travels from Spain to Egypt in search of treasure. The story explores themes of destiny, dreams, and the importance of listening to one's heart. </p>
+              <div class="book-meta">
+                <div class="book-date">
+                  <span class="font-medium">Read:</span> January 2024
+                </div>
+                <div>
+                  <span class="font-medium">My Rating:</span>
+                  <span class="star-rating">★★★★</span><span class="empty-star">★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-card">
+          <div class="book-card-content">
+            <!-- Book Cover -->
+            <div
+              class="book-cover"
+              style="background: linear-gradient(to bottom, #7c3aed, #5b21b6)"
+            >
+              <div class="text-white text-center p-4">
+                <div class="text-lg font-bold mb-2">SAPIENS</div>
+                <div class="text-sm">A Brief History of Humankind</div>
+                <div class="text-xs mt-2 opacity-80">Yuval Noah Harari</div>
+              </div>
+            </div>
+
+            <!-- Book Details -->
+            <div class="book-details">
+              <h2>Sapiens: A Brief History of Humankind</h2>
+              <p>
+                An exploration of how Homo sapiens came to dominate the world through three major revolutions: cognitive, agricultural, and scientific. Harari examines the impact of these changes on human society and our future. </p>
+              <div class="book-meta">
+                <div class="book-date">
+                  <span class="font-medium">Read:</span> December 2023
+                </div>
+                <div>
+                  <span class="font-medium">My Rating:</span>
+                  <span class="star-rating">★★★★★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Book 4 -->
+        <div class="book-card">
+          <div class="book-card-content">
+            <!-- Book Cover -->
+            <div
+              class="book-cover"
+              style="background: linear-gradient(to bottom, #dc2626, #991b1b)"
+            >
+              <div class="text-white text-center p-4">
+                <div class="text-lg font-bold mb-2">1984</div>
+                <div class="text-xs mt-2 opacity-80">George Orwell</div>
+              </div>
+            </div>
+
+            <!-- Book Details -->
+            <div class="book-details">
+              <h2>1984</h2>
+              <p>
+                A dystopian novel set in a totalitarian society where Big Brother watches everything. The story follows Winston Smith as he struggles with oppression and seeks truth and freedom in a world of perpetual surveillance. </p>
+              <div class="book-meta">
+                <div class="book-date">
+                  <span class="font-medium">Read:</span> November 2023
+                </div>
+                <div>
+                  <span class="font-medium">My Rating:</span>
+                  <span class="star-rating">★★★★</span><span class="empty-star">★</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      <!-- Footer -->
+      <footer>
+        <p>© 2025 René Laplante</p>
+      </footer>
+    </div>
+  </body>
+</html>
