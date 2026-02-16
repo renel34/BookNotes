@@ -2,11 +2,11 @@
 
 ## Description
 
-My Reading Journal is a web application that allows users to keep track of books they've read, rate them, and add personal notes. It's built with Node.js, Express, and PostgreSQL, providing a simple yet powerful way to manage your reading list and reflections.
+My Reading Journal is a web application that allows users to keep track of books they've read, rate them, and add personal notes. It's built with Node.js, Express, and PostgreSQL, providing a simple yet powerful way to manage a reading list and reflections.
 
 ## Features
 
-- Add books to your reading journal
+- Add books to a reading journal
 - Edit existing book entries
 - Delete book entries
 - Rate books on a 5-star scale
