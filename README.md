@@ -1,10 +1,5 @@
 # Book Notes
 
-![Node.js](https://img.shields.io/badge/Node.js-Express-green)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
-![EJS](https://img.shields.io/badge/View-EJS-orange)
-![License](https://img.shields.io/badge/License-MIT-yellow)
-
 A full-stack book tracking application built with **Node.js**, **Express**, **PostgreSQL**, and **EJS** that allows users to maintain a personal reading log, rate books, write summaries, and automatically retrieve book information from the Open Library API.
 
 ---
