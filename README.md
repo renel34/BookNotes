@@ -1,4 +1,4 @@
-# 📚 Book Notes
+# Book Notes
 
 ![Node.js](https://img.shields.io/badge/Node.js-Express-green)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
@@ -9,7 +9,7 @@ A full-stack book tracking application built with **Node.js**, **Express**, **Po
 
 ---
 
-## 📖 Overview
+## Overview
 
 Book Notes was developed to demonstrate full-stack web development concepts including:
 
@@ -24,7 +24,7 @@ The application enables users to build and manage a personal reading collection 
 
 ---
 
-## 📸 Screenshot
+## Screenshot
 
 > Replace this image with an actual screenshot of your application.
 
@@ -38,7 +38,7 @@ screenshots/homepage.png
 
 ---
 
-## 🚀 Features
+## Features
 
 - Add books to a personal reading collection
 - Edit existing book entries
@@ -53,7 +53,7 @@ screenshots/homepage.png
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 | Technology | Purpose |
 |------------|----------|
@@ -69,7 +69,7 @@ screenshots/homepage.png
 
 ---
 
-## 💡 Skills Demonstrated
+## Skills Demonstrated
 
 This project demonstrates practical experience with:
 
@@ -88,7 +88,7 @@ This project demonstrates practical experience with:
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 The application follows a traditional server-rendered architecture:
 
@@ -115,7 +115,7 @@ Express Server
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 Book-Notes/
@@ -140,7 +140,7 @@ Book-Notes/
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 ### Clone the Repository
 
@@ -189,7 +189,7 @@ http://localhost:3000
 
 ---
 
-## 🗄 Database
+## Database
 
 The application uses PostgreSQL to persist data.
 
@@ -206,7 +206,7 @@ Unlike applications that store data in memory, all book information remains avai
 
 ---
 
-## 🌐 API Integration
+## API Integration
 
 The application integrates with the **Open Library API** to automatically retrieve:
 
@@ -219,7 +219,7 @@ This reduces manual data entry and improves the overall user experience.
 
 ---
 
-## 📋 How It Works
+## How It Works
 
 ### Adding a Book
 
@@ -241,7 +241,7 @@ Users can:
 
 ---
 
-## 🎯 Challenges Solved
+## Challenges Solved
 
 During development I gained experience with:
 
@@ -255,7 +255,7 @@ During development I gained experience with:
 
 ---
 
-## 📚 What I Learned
+## What I Learned
 
 This project helped me develop practical experience with:
 
@@ -269,7 +269,7 @@ This project helped me develop practical experience with:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **René Laplante**
 
@@ -279,7 +279,7 @@ This project helped me develop practical experience with:
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License.
 
